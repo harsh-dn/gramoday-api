@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+
+  <div class="container mt-5">
+    <div class="center-element">
+      <h1 class="login-header">Share Price</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7 login-div">
+        <div class="card">
+          <div class="card-body">
+
+            <form action="/reports" method="POST">
+              <div class="form-group">
+                <label for="userID">User-ID</label>
+                <input type="text" class="form-control" name="userID" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="marketID">Market-ID</label>
+                <input type="text" class="form-control" name="marketID" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="marketName">Market-Name</label>
+                <input type="text" class="form-control" name="marketName" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="cmdtyID">Commodity-ID</label>
+                <input type="text" class="form-control" name="cmdtyID" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="marketType">Market-Type</label>
+                <input type="text" class="form-control" name="marketType" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="cmdtyName">Commodity-Name</label>
+                <input type="text" class="form-control" name="cmdtyName" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="priceUnit">Price-Unit</label>
+                <input type="text" class="form-control" name="priceUnit" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="convFctr">Conversion-Factor</label>
+                <input type="number" class="form-control" name="convFctr" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" name="price" autocomplete="off">
+              </div>
+
+              <button type="submit" class="btn btn-dark">Post</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
